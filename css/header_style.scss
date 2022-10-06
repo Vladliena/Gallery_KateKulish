@@ -1,0 +1,72 @@
+@import "fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin container {
+  max-width: 1800px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #272727;
+  background-size: cover;
+  padding: 17px 60px;
+  width: 100%;
+
+  .container {
+    @include container;
+    align-items: center;
+
+    .logo {
+      margin-right: 50px;
+    }
+
+    nav {
+      .header_menu {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+
+        li {
+          font-family: 'Poppins', sans-serif;
+          list-style: none;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 16px;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .header_socials {
+      .header-socials_icons {
+        display: flex;
+        align-items: center;
+
+        li {
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 50%;
+          width: 46px;
+          height: 46px;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+          list-style: none;
+          display: flex;
+
+          &:first-of-type {
+            background-color: #FFFFFF;
+            margin-right: 18px;
+
+          }
+        }
+      }
+    }
+  }
+}

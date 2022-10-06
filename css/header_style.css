@@ -1,0 +1,57 @@
+@import "fonts.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #272727;
+  background-size: cover;
+  padding: 17px 60px;
+  width: 100%;
+}
+header .container {
+  max-width: 1800px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  margin-right: 50px;
+}
+header .container nav .header_menu {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+header .container nav .header_menu li {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+header .container .header_socials .header-socials_icons {
+  display: flex;
+  align-items: center;
+}
+header .container .header_socials .header-socials_icons li {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  list-style: none;
+  display: flex;
+}
+header .container .header_socials .header-socials_icons li:first-of-type {
+  background-color: #FFFFFF;
+  margin-right: 18px;
+}
+
+/*# sourceMappingURL=header_style.css.map */
