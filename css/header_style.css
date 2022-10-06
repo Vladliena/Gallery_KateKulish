@@ -49,9 +49,9 @@ header .container .header_socials .header-socials_icons li {
   list-style: none;
   display: flex;
 }
-header .container .header_socials .header-socials_icons li:first-of-type {
+header .container .header_socials .header-socials_icons .header-social_icons_favorite {
   background-color: #FFFFFF;
-  margin-right: 18px;
+  margin-right: 37px;
 }
 
 /*# sourceMappingURL=header_style.css.map */
