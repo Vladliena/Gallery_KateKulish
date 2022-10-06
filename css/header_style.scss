@@ -8,7 +8,6 @@
 
 @mixin container {
   max-width: 1800px;
-  display: flex;
   margin: auto;
   justify-content: space-between;
 }
@@ -21,6 +20,7 @@ header {
 
   .container {
     @include container;
+    display: flex;
     align-items: center;
 
     .logo {

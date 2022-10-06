@@ -1,2 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import "header_style.css";
 @import "fonts.css";
+
+@mixin container {
+  max-width: 1800px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+
+/*main-banner*/
+
+
+.main-banner {
+  background-image: url("../images/main_banner/bg.png");
+  background-size: cover;
+  padding-top: 130px;
+  min-height: 145vh;
+  .container{
+    @include container;
+    h1{
+      font-family: 'Noto Serif', serif;
+      font-weight: 400;
+      font-size: 250px;
+      line-height: 220px;
+      text-shadow: 0 6px 40px rgba(0, 0, 0, 0.9);
+      color: #FFFFFF;
+      margin-bottom: 25px;
+    }
+    .main-banner_list{
+      display: flex;
+      margin-left: 35px;
+      li{
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 28px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+/*gallery-banner*/
+
+.gallery-banner{
+  margin-top: -200px;
+  .container{
+    h3{
+      font-family: 'Noto Serif', serif;
+      font-weight: 400;
+      font-size: 200px;
+      line-height: 220px;
+      color: #272727;
+    }
+  }
+}
