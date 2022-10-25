@@ -6,6 +6,8 @@
 
 @import "header_style.css";
 @import "fonts.css";
+@import "../slick/slick.css";
+@import "../slick/slick-theme.css";
 
 @mixin container {
   max-width: 1800px;
