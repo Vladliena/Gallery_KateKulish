@@ -36,7 +36,10 @@
 .main-banner .container .main-banner_list li {
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
   font-size: 26px;
   line-height: 28px;
   margin-right: 50px;
@@ -45,6 +48,8 @@
 /*gallery-banner*/
 .gallery-banner {
   margin-top: -200px;
+  padding-bottom: 60px;
+  overflow: hidden;
 }
 .gallery-banner .container h3 {
   font-family: "Noto Serif", serif;
@@ -52,6 +57,62 @@
   font-size: 200px;
   line-height: 220px;
   color: #272727;
+  margin-bottom: 50px;
+}
+.gallery-banner .container .gallery_carousel {
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+.gallery-banner .container .gallery_carousel .gallery_carousel_card {
+  text-align: center;
+}
+.gallery-banner .container .gallery_carousel .gallery_carousel_card .gallery_carousel_image {
+  margin-bottom: 30px;
+}
+.gallery-banner .container .gallery_carousel .gallery_carousel_card .vl {
+  border-left: 2px solid rgb(61, 61, 61);
+  height: 23px;
+  margin-bottom: 30px;
+  display: inline-flex;
+}
+.gallery-banner .container .gallery_carousel .gallery_carousel_card .gallery_img_description {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(61, 61, 61);
+}
+.gallery-banner .container .gallery_carousel .gallery_carousel_card .gallery_buy_button {
+  border: none;
+  background-color: inherit;
+  color: rgb(65, 55, 208);
+  margin-bottom: 60px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.gallery-banner .container .gallery_carousel .slick-list {
+  margin: 0 -10px;
+}
+.gallery-banner .container .gallery_carousel .slick-list .slick-slide {
+  margin: 0 10px;
+}
+.gallery-banner .container .gallery_carousel .slick-list .slick-slide:nth-child(2n) {
+  margin-top: 50px;
+}
+
+.slick-dots {
+  border: #E9E9E9 1px solid;
+  border-radius: 150px;
+  width: max-content;
+  padding: 16px 22px;
+  align-items: center;
+  display: flex;
 }
 
 /*# sourceMappingURL=main_style.css.map */

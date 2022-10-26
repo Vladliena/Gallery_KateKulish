@@ -8,30 +8,31 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main_style.css">
+
 </head>
 <body>
 <header>
     <div class="container">
-        <img class="logo" src="images/header/logo.png" alt="logo">
+        <a href="#" target="_self"><img class="logo" src="images/header/logo.png" alt="logo"></a>
         <nav>
             <ul class="header_menu">
-                <li><a>Main</a></li>
-                <li><a>Gallery</a></li>
-                <li><a>Exhibitions</a></li>
-                <li><a>Bio</a></li>
-                <li><a>FAQ</a></li>
-                <li><a>Contacts</a></li>
-                <li><a>Auction</a></li>
-                <li><a>NFT</a></li>
+                <li><a href="#" target="_self">Main</a></li>
+                <li><a href="#" target="_self">Gallery</a></li>
+                <li><a href="#" target="_self">Exhibitions</a></li>
+                <li><a href="#" target="_self">Bio</a></li>
+                <li><a href="#" target="_self">FAQ</a></li>
+                <li><a href="#" target="_self">Contacts</a></li>
+                <li><a href="#" target="_self">Auction</a></li>
+                <li><a href="#" target="_self">NFT</a></li>
             </ul>
         </nav>
         <div class="header_socials">
             <ul class="header-socials_icons">
-                <li class="header-social_icons_favorite"><a><img src="images/header/heart.svg" alt="icon"></a></li>
-                <li><a><img src="images/header/facebook.svg" alt="icon"></a></li>
-                <li><a><img src="images/header/tiktok.svg" alt="icon"></a></li>
-                <li><a><img src="images/header/instagram.svg" alt="icon"></a></li>
-                <li><a><img src="images/header/youtube.svg" alt="icon"></a></li>
+                <li class="header-social_icon_favorite"><a><img class="header-social_svg" src="images/header/heart.svg" alt="icon"></a></li>
+                <li><a><img class="header-social_svg" src="images/header/facebook.svg" alt="icon"></a></li>
+                <li><a><img class="header-social_svg" src="images/header/tiktok.svg" alt="icon"></a></li>
+                <li><a><img class="header-social_svg" src="images/header/instagram.svg" alt="icon"></a></li>
+                <li><a><img class="header-social_svg" src="images/header/youtube.svg" alt="icon"></a></li>
             </ul>
         </div>
     </div>
@@ -50,15 +51,58 @@
     <div class="container">
         <h3>GALLERY</h3>
         <div class="gallery_carousel">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
+            <div class="gallery_carousel_card"><img class="gallery_carousel_image" src="images/slick_carousel/3.jpg" alt="images">
+                <div class="vl"></div>
+                <dl class="gallery_img_description">
+                    <dt><strong>Name of the painting</strong><br>
+                        (15.03.2020)</dt>
+                    <dd><strong>330.00 USD</strong></dd>
+                </dl>
+                <button class="gallery_buy_button">BUY</button>
+            </div>
+            <div class="gallery_carousel_card"><img class="gallery_carousel_image" src="images/slick_carousel/1.jpg" alt="images">
+                <div class="vl"></div>
+                <dl class="gallery_img_description">
+                    <dt><strong>Name of the painting</strong><br>
+                        (15.03.2020)</dt>
+                    <dd><strong>330.00 USD</strong></dd>
+                </dl>
+                <button class="gallery_buy_button">BUY</button>
+            </div>
+            <div class="gallery_carousel_card"><img class="gallery_carousel_image" src="images/slick_carousel/2.jpg" alt="images">
+                <div class="vl"></div>
+                <dl class="gallery_img_description">
+                    <dt><strong>Name of the painting</strong><br>
+                        (15.03.2020)</dt>
+                    <dd><strong>330.00 USD</strong></dd>
+                </dl>
+                <button class="gallery_buy_button">BUY</button>
+            </div>
+            <div class="gallery_carousel_card"><img class="gallery_carousel_image" src="images/slick_carousel/4.jpg" alt="images">
+                <div class="vl"></div>
+                <dl class="gallery_img_description">
+                    <dt><strong>Name of the painting</strong><br>
+                        (15.03.2020)</dt>
+                    <dd><strong>330.00 USD</strong></dd>
+                </dl>
+                <button class="gallery_buy_button">BUY</button>
+            </div>
+
+            <div class="gallery_carousel_card"><img class="gallery_carousel_image" src="images/slick_carousel/5.jpg" alt="images">
+                <div class="vl"></div>
+                <dl class="gallery_img_description">
+                    <dt><strong>Name of the painting</strong><br>
+                        (15.03.2020)</dt>
+                    <dd><strong>330.00 USD</strong></dd>
+                </dl>
+                <button class="gallery_buy_button">BUY</button>
+            </div>
         </div>
     </div>
 </section>
-<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="js/main_scripts.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

@@ -15,6 +15,14 @@
   justify-content: space-between;
 }
 
+@mixin Poppins400 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 
 /*main-banner*/
 
@@ -40,8 +48,7 @@
       margin-left: 35px;
       li{
         color: #FFFFFF;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+        @include Poppins400;
         font-size: 26px;
         line-height: 28px;
         margin-right: 50px;
@@ -54,6 +61,8 @@
 
 .gallery-banner{
   margin-top: -200px;
+  padding-bottom: 60px;
+  overflow: hidden;
   .container{
     h3{
       font-family: 'Noto Serif', serif;
@@ -61,6 +70,54 @@
       font-size: 200px;
       line-height: 220px;
       color: #272727;
+      margin-bottom: 50px;
+    }
+    .gallery_carousel{
+      position: relative;
+      justify-content: center;
+      display: flex;
+      .gallery_carousel_card{
+        text-align: center;
+        .gallery_carousel_image{
+          margin-bottom: 30px;
+        }
+        .vl{
+          border-left: 2px solid rgba(61, 61, 61, 1);
+          height: 23px;
+          margin-bottom: 30px;
+          display: inline-flex;
+        }
+        .gallery_img_description{
+          @include Poppins400;
+        color: rgba(61, 61, 61, 1);
+        }
+        .gallery_buy_button{
+          border: none;
+          background-color: inherit;
+          color: rgba(65, 55, 208, 1);
+          margin-bottom: 60px;
+          @include Poppins400;
+          font-weight: 600;
+        }
+      }
+      .slick-list {
+        margin: 0 -10px;
+        .slick-slide {
+          margin: 0 10px;
+          &:nth-child(2n){
+            margin-top: 50px;
+          }
+        }
+      }
     }
   }
+}
+
+.slick-dots{
+  border: #E9E9E9 1px solid;
+  border-radius: 150px;
+  width: max-content;
+  padding: 16px 22px;
+  align-items: center;
+  display: flex;
 }

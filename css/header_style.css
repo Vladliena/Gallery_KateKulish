@@ -25,14 +25,15 @@ header .container nav .header_menu {
   display: flex;
   align-items: center;
   gap: 90px;
-}
-header .container nav .header_menu li {
-  font-family: "Poppins", sans-serif;
   list-style: none;
+}
+header .container nav .header_menu li a {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 16px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 header .container .header_socials .header-socials_icons {
   display: flex;
@@ -48,10 +49,33 @@ header .container .header_socials .header-socials_icons li {
   margin-right: 10px;
   list-style: none;
   display: flex;
+  position: relative;
 }
-header .container .header_socials .header-socials_icons .header-social_icons_favorite {
+header .container .header_socials .header-socials_icons li:first-of-type::after {
+  content: "";
+  width: 2px;
+  height: 39px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  position: relative;
+  right: -30px;
+}
+header .container .header_socials .header-socials_icons li .header-social_svg {
+  display: flex;
+}
+header .container .header_socials .header-socials_icons .header-social_icon_favorite {
   background-color: #FFFFFF;
   margin-right: 37px;
+  transition: 0.3s;
+}
+header .container .header_socials .header-socials_icons .header-social_icon_favorite:hover {
+  background-color: rgba(255, 29, 29, 0.33);
+}
+header .container .header_socials .header-socials_icons .header-social_icon_favorite a {
+  transition: 0.3s;
+}
+header .container .header_socials .header-socials_icons .header-social_icon_favorite a:hover {
+  filter: invert(100%);
 }
 
 /*# sourceMappingURL=header_style.css.map */

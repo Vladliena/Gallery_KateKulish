@@ -46,15 +46,15 @@
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
-  opacity: 0.25;
+  opacity: 100;
 }
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
   font-size: 20px;
   line-height: 1;
-  color: white;
-  opacity: 0.75;
+  color: #4137D0;
+  opacity: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -141,14 +141,14 @@
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: black;
-  opacity: 0.25;
+  color: #535353;
+  opacity: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before {
-  color: black;
-  opacity: 0.75;
+  color: #4137D0;
+  opacity: 100;
 }
 
 /*# sourceMappingURL=slick-theme.css.map */
